@@ -18,4 +18,4 @@ class TestLoginTxt:
     @pytest.mark.parametrize("username,pwd", get_data())
     def test_txt(self,username,pwd):
         print("username:", username)
-        print("pwd:", pwd)
+        print("pwd :", pwd)
