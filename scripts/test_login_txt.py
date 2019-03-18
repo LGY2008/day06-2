@@ -10,11 +10,11 @@ def get_data():
     arrs = []
     for data in read_txt():
         arrs.append(tuple(data.strip().split(",")))
-    return arrs
+    return arrs 
 
 
 class TestLoginTxt:
     @pytest.mark.parametrize("username,pwd", get_data())
     def test_txt(self,username, pwd):
         print("username:", username)
-        print("pwd:", pwd)
+        print("pwd :", pwd)
