@@ -11,7 +11,7 @@ def get_data():
     arrs = []
     for data in read_txt():
         arrs.append(tuple(data.strip().split(",")))
-    return arrs
+    return arrs 
 
 
 class TestLoginTxt:
