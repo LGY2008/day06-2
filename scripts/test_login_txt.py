@@ -3,7 +3,6 @@ import sys
 sys.path.append(os.getcwd())
 
 import pytest
-
 from read_data.back.read_txt import read_txt
 
 
@@ -16,6 +15,6 @@ def get_data():
 
 class TestLoginTxt:
     @pytest.mark.parametrize("username,pwd", get_data())
-    def test_txt(self,username,pwd):
+    def test_txt(self,username, pwd):
         print("username:", username)
         print("pwd:", pwd)
